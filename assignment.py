@@ -50,8 +50,10 @@ of linear regression. So I thought that I should add some features.
 """
 fig = plt.figure()
 ax = plt.axes(projection='3d')
-ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray')
-ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r')
+ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray', label = "Original")
+ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r', label = "Predicted")
+plt.title('1st attempt with Linear Regression')
+plt.legend()
 plt.show()
 ############################################################################
 ## Multi Polynomial Regression
@@ -88,8 +90,10 @@ values.
 """
 fig = plt.figure()
 ax = plt.axes(projection='3d')
-ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray')
-ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r')
+ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray', label = "Original")
+ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r', label = "Predicted")
+plt.title('2nd attempt with Polynomial Regression')
+plt.legend()
 plt.show()
 ############################################################################
 """
@@ -123,6 +127,8 @@ values.
 """
 fig = plt.figure()
 ax = plt.axes(projection='3d')
-ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray')
-ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r')
+ax.scatter(X_train[:,0], X_train[:,1], Y_train, 'gray', label = "Original")
+ax.scatter(X_train[:,0], X_train[:,1], Yhat, 'r', label = "Predicted")
+plt.title('3rd attempt with 3 degree Polynomial Regression')
+plt.legend()
 plt.show()
